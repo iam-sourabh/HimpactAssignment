@@ -1,0 +1,18 @@
+<div class="info-root">
+
+    <div *ngIf="userInfo">
+        <h1>{{userInfo.first_name}} {{userInfo.last_name}}</h1>
+        <div>
+            <img [src]="userInfo.avatar">
+        </div>
+        <div>
+            <p><strong>ID :</strong> {{userInfo.id}}</p>
+            <p><strong>First Name :</strong> {{userInfo.first_name}}</p>
+            <p><strong>Last Name :</strong> {{userInfo.last_name}}</p>
+            <p><strong>E-mail :</strong> {{userInfo.email}}</p>
+        </div>
+    </div>
+    <div>
+        <button mat-raised-button color="primary" (click)="goBack()">Back</button>
+    </div>
+</div>
