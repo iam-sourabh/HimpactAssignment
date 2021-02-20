@@ -23,6 +23,6 @@ export class UserInfoComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    this.userInfo = null;
+    this.appService.clearInfo();
   }
 }

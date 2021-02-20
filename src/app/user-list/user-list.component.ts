@@ -42,6 +42,8 @@ export class UserListComponent implements OnInit {
   }
 
   showUserInfo(){
+    console.log(this.selectedUser);
+    
     if(this.selectedUser){
       this.appService.showInfoPage(true);
       this.appService.loadUserInfo(this.selectedUser);
